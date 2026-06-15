@@ -7,25 +7,25 @@ from build import *  # noqa
 SVC = {
  "furnace-repair": {
    "icon":"flame", "kicker":"Furnace Repair in London, Ontario",
-   "h1":"Fast, Reliable Furnace Repair to Keep Your Home Warm",
-   "intro":"When your furnace stops working, you need fast, dependable service you can trust. At London Heating &amp; Cooling, we provide expert furnace repair in London, Ontario and surrounding Middlesex County communities to restore warmth, safety, and efficiency to your home. Our skilled technicians quickly diagnose issues and deliver lasting repairs, helping you stay comfortable through every cold Ontario winter.",
-   "meta":"Fast, reliable furnace repair in London, Ontario. Same-day service, emergency repairs & maintenance from licensed local technicians. Get a free quote.",
-   "problem_h":"Furnace won't heat, makes noise, or won't start?",
-   "problem_p":"London Heating &amp; Cooling provides expert furnace repair in London, ON to keep homes warm, safe, and efficient through the coldest months.",
+   "h1":"No-Heat Furnace Repair, Done Fast and Done Safe",
+   "intro":"A furnace that quits during a London cold snap is more than uncomfortable, it can put your family and your pipes at risk. London Furnace Repair is the heating specialist homeowners across London, Ontario and Middlesex County call when the heat goes out. We answer no-heat emergencies around the clock, pinpoint the fault quickly, check for carbon monoxide and gas safety, and get warm air moving again with a lasting repair.",
+   "meta":"Fast, reliable furnace repair in London, Ontario. Same-day no-heat service, 24/7 emergency repairs & maintenance from licensed local technicians. Free quote.",
+   "problem_h":"Furnace won&#39;t heat, won&#39;t start, or smells wrong?",
+   "problem_p":"London Furnace Repair is the local heating specialist that keeps London, ON homes warm and safe through the coldest months, with same-day no-heat service.",
    "features":[
-     ("flame","Fast, Efficient Repairs for Any Issue","Whether your furnace won't start, makes unusual noises, or heats unevenly, our emergency furnace repair delivers fast diagnostics, reliable fixes, and same-day service to restore comfort quickly."),
-     ("settings","Maintenance That Prevents Breakdowns","Regular furnace maintenance improves efficiency, extends your heating system's life, and prevents failures. We check airflow, filters, burners, thermostats, and key components to keep things running safely all winter."),
-     ("shield","Trusted, Local Experts You Can Count On","As a family-run HVAC company in London, our certified technicians repair all furnace brands — including high-efficiency systems — with honest pricing and clear communication."),
+     ("flame","Same-Day No-Heat Repairs","When your furnace won&#39;t start, blows cold air, or short-cycles, our emergency heating service delivers fast diagnostics and same-day repairs so your home is warm again before the cold sets in."),
+     ("shield","Carbon Monoxide &amp; Gas Safety Checks","Heating safety comes first. We inspect the heat exchanger, burners, and venting and test for carbon monoxide on every call, so the system warming your home is never quietly putting it at risk."),
+     ("settings","Maintenance That Prevents Winter Breakdowns","A pre-season furnace tune-up is the cheapest repair you will ever buy. We clean burners, check airflow and ignition, and catch worn parts before a January night turns them into an emergency."),
    ],
    "rev":[0,1,2],
  },
  "ac-repair": {
    "icon":"snowflake", "kicker":"AC Repair in London, ON",
    "h1":"Fast and Affordable AC Repair to Keep You Cool",
-   "intro":"If your air conditioner isn't keeping up with the heat, London Heating &amp; Cooling is here to help with prompt, professional AC repair you can count on. We provide fast, affordable air conditioning repair in London and surrounding Middlesex County communities, restoring comfort and efficiency when you need it most. Our experienced technicians diagnose problems quickly and deliver reliable solutions to keep your home cool all summer long.",
+   "intro":"If your air conditioner isn't keeping up with the heat, London Furnace Repair is here to help with prompt, professional AC repair you can count on. We provide fast, affordable air conditioning repair in London and surrounding Middlesex County communities, restoring comfort and efficiency when you need it most. Our experienced technicians diagnose problems quickly and deliver reliable solutions to keep your home cool all summer long.",
    "meta":"Fast, affordable AC repair in London, Ontario. Same-day air conditioning repair for central air & ductless systems from licensed local techs. Free quotes.",
    "problem_h":"AC not cooling, blowing warm air, or making noise?",
-   "problem_p":"London Heating &amp; Cooling provides expert AC repair in London, ON for central air, ductless mini-splits, and high-efficiency systems.",
+   "problem_p":"London Furnace Repair provides expert AC repair in London, ON for central air, ductless mini-splits, and high-efficiency systems.",
    "features":[
      ("snowflake","Fast, Reliable AC Repairs for Any Issue","Whether your air conditioner won't start, blows warm air, or makes noise, our emergency AC repair delivers fast diagnostics and same-day service to restore reliable cooling quickly."),
      ("settings","Maintenance to Avoid Future Breakdowns","Regular AC maintenance improves efficiency, extends your unit's life, and prevents breakdowns. We inspect refrigerant, airflow, coils, thermostats, and ductwork to keep your AC running safely all season."),
@@ -36,10 +36,10 @@ SVC = {
  "ductless-ac-installation": {
    "icon":"fan", "kicker":"Ductless AC Installation in London, Ontario",
    "h1":"Energy-Efficient Ductless Cooling, Custom-Fit to Your Home",
-   "intro":"Experience reliable, energy-efficient cooling with professional ductless AC installation from London Heating &amp; Cooling. Serving London, Ontario and surrounding Middlesex County areas, our expert technicians install high-performance ductless air conditioning systems that provide customizable comfort year-round. Ideal for homes without traditional ductwork, our solutions deliver quiet, efficient cooling while helping you save on energy costs.",
+   "intro":"Experience reliable, energy-efficient cooling with professional ductless AC installation from London Furnace Repair. Serving London, Ontario and surrounding Middlesex County areas, our expert technicians install high-performance ductless air conditioning systems that provide customizable comfort year-round. Ideal for homes without traditional ductwork, our solutions deliver quiet, efficient cooling while helping you save on energy costs.",
    "meta":"Professional ductless mini-split AC installation in London, Ontario. Energy-efficient, quiet cooling for homes without ductwork. Free quotes.",
    "problem_h":"Central air isn't practical without ductwork?",
-   "problem_p":"London Heating &amp; Cooling provides ductless AC installation for efficient, flexible cooling that reduces energy costs and keeps every room comfortable.",
+   "problem_p":"London Furnace Repair provides ductless AC installation for efficient, flexible cooling that reduces energy costs and keeps every room comfortable.",
    "features":[
      ("fan","Custom Ductless Solutions for Your Space","Our certified technicians design and install ductless mini-split systems tailored to your home or office, delivering precise temperature control, quiet operation, and energy efficiency from consultation to installation."),
      ("leaf","Energy-Efficient and Flexible Installation","Ductless systems need no ductwork, allowing faster, less disruptive installation. Proper placement ensures optimal performance, lower energy bills, flexible zoning, and reliable comfort year-round."),
@@ -49,36 +49,36 @@ SVC = {
  },
  "heat-pump-repair-installation": {
    "icon":"refresh", "kicker":"Heat Pump Repair &amp; Installation in London, ON",
-   "h1":"Expert Heat Pump Services for Year-Round Comfort",
-   "intro":"For reliable heat pump repair and installation in London, Ontario, trust the experienced team at London Heating &amp; Cooling. We provide expert heat pump services designed to keep your home efficient and comfortable in every season — from cold winters to hot, humid summers. Whether you need fast repairs, routine maintenance, or a new energy-efficient system, our skilled technicians deliver dependable solutions.",
-   "meta":"Expert heat pump repair & installation in London, Ontario. Energy-efficient year-round heating and cooling from licensed local technicians. Free quotes.",
-   "problem_h":"Heat pump won't heat, cool, or runs inefficiently?",
-   "problem_p":"London Heating &amp; Cooling provides expert heat pump repair and installation in London, Ontario for reliable year-round comfort and lower energy bills.",
+   "h1":"Heat Pump Repair &amp; Installation That Keeps the Heat On",
+   "intro":"A heat pump is a year-round system, but in London the part that matters most is the heat it makes on a freezing night. London Furnace Repair repairs and installs heat pumps across London, Ontario and Middlesex County with that winter performance front of mind. Whether your unit has stopped heating, frosts over, or you are weighing a new energy-efficient system, our technicians get it working dependably and explain how it pairs with your furnace for backup on the coldest days.",
+   "meta":"Expert heat pump repair & installation in London, Ontario. Reliable winter heating, energy-efficient comfort and backup heat from licensed local techs. Free quote.",
+   "problem_h":"Heat pump not heating, frosting over, or running poorly?",
+   "problem_p":"London Furnace Repair handles heat pump repair and installation in London, Ontario with a focus on dependable winter heat and lower energy bills year-round.",
    "features":[
-     ("refresh","Fast, Reliable Heat Pump Repairs","Whether your heat pump isn't heating, cooling evenly, or is making noise, our emergency heat pump repair delivers fast diagnostics and same-day service for all makes and models."),
-     ("zap","Professional Heat Pump Installation","When it's time for a new heat pump, our expert installation ensures efficiency and performance. We help you choose the right system for lasting comfort and lower energy bills."),
-     ("shield","Trusted Local Heat Pump Experts","As a family-run HVAC company in London, our certified technicians repair and install all heat pump brands with transparent pricing and professional service."),
+     ("refresh","Fast Heat Pump Repairs When the Heat Drops","If your heat pump stops heating, frosts up, or struggles in the cold, our same-day service finds the fault fast and restores reliable warmth, with backup heat sorted out so you are never left in the cold."),
+     ("zap","Right-Sized Installation for London Winters","A heat pump only saves money if it is sized and set up for our climate. We help you pick a cold-climate system, pair it with proper backup heat, and install it for efficient, dependable comfort."),
+     ("shield","Local Heat Pump Experts You Can Trust","As a family-run heating company in London, our certified technicians service and install all heat pump brands with honest pricing and clear, straight advice."),
    ],
    "rev":[2,3,0],
  },
  "fireplace-installation": {
    "icon":"fireplace", "kicker":"Fireplace Installation in London, Ontario",
-   "h1":"Beautiful and Safe Fireplace Installation",
-   "intro":"Enhance your home's warmth and style with professional fireplace installation from London Heating &amp; Cooling. Serving London, Ontario and surrounding Middlesex County areas, our skilled team ensures safe, efficient, and beautiful installations that complement any space. From modern gas units to classic wood-burning fireplaces, we provide expert guidance and quality workmanship to create a cozy, inviting atmosphere.",
-   "meta":"Professional gas, electric & wood-burning fireplace installation in London, Ontario. Safe, code-compliant & beautifully integrated. Free quotes.",
-   "problem_h":"Want to add warmth and a focal point to your home?",
-   "problem_p":"London Heating &amp; Cooling provides professional fireplace installation, ensuring safe, efficient, code-compliant fireplaces beautifully integrated into your home.",
+   "h1":"Fireplace Installation for Real Warmth and Backup Heat",
+   "intro":"A well-installed fireplace does more than look good. In a London winter it adds a second source of heat that keeps a room comfortable when the furnace is working hard, and it can hold the cold at bay during a power or furnace outage. London Furnace Repair installs gas, electric, and wood-burning fireplaces across London, Ontario and Middlesex County, handling venting, gas connections, and code so the warmth you add to your home is safe as well as inviting.",
+   "meta":"Professional gas, electric & wood-burning fireplace installation in London, Ontario. Safe, code-compliant heat and backup warmth. Free quotes.",
+   "problem_h":"Want a warmer room and reliable backup heat?",
+   "problem_p":"London Furnace Repair installs gas, electric, and wood-burning fireplaces in London, Ontario, safely vented and code-compliant, for extra warmth and backup heat all winter.",
    "features":[
-     ("fireplace","Professional Installation for Any Style","Whether you choose gas, electric, or wood-burning, our certified technicians manage installation, assess layout and ventilation, and ensure safety — creating a stunning focal point in your home."),
-     ("shield","Safe and Code-Compliant Installations","Safety is our priority. Our fireplace installations meet local building codes and safety standards, ensuring proper venting, reliable operation, and energy-efficient heating you can trust."),
-     ("award","Trusted Local Experts","As a family-run HVAC company in London, we deliver professional fireplace installation with transparent pricing, fast response, and exceptional craftsmanship."),
+     ("fireplace","Installation for Any Style of Fireplace","Gas, electric, or wood-burning, our certified technicians assess layout, clearances, and venting and handle the full install, giving you a genuine source of heat and a focal point in the room."),
+     ("shield","Safe, Code-Compliant Venting and Gas Work","Heating safety is the priority. Every install meets local building and gas codes, with proper venting and carbon monoxide protection so your fireplace warms the room without putting the household at risk."),
+     ("award","Trusted Local Heating Craftsmanship","As a family-run heating company in London, we deliver clean, careful fireplace installation with transparent pricing and workmanship built to last through many winters."),
    ],
    "rev":[5,1,3],
  },
  "thermostat-repair-replacement": {
    "icon":"gauge", "kicker":"Thermostat Repair &amp; Replacement in London, Ontario",
    "h1":"Take Control of Your Home's Temperature",
-   "intro":"Stay in control of your home's comfort with professional thermostat repair and replacement from London Heating &amp; Cooling. We provide expert thermostat services in London, Ontario and surrounding Middlesex County areas, ensuring accurate temperature control, improved energy efficiency, and reliable system performance. Whether you need a quick repair, a smart-thermostat upgrade, or a full replacement, our technicians deliver dependable solutions.",
+   "intro":"Stay in control of your home's comfort with professional thermostat repair and replacement from London Furnace Repair. We provide expert thermostat services in London, Ontario and surrounding Middlesex County areas, ensuring accurate temperature control, improved energy efficiency, and reliable system performance. Whether you need a quick repair, a smart-thermostat upgrade, or a full replacement, our technicians deliver dependable solutions.",
    "meta":"Thermostat repair & replacement in London, Ontario. Smart & programmable thermostat installation from licensed HVAC technicians. Free quote today.",
    "problem_h":"Thermostat won't turn on or shows the wrong temperature?",
    "problem_p":"A malfunctioning thermostat causes inconsistent comfort and higher energy bills. We provide thermostat repair and replacement for efficient HVAC performance and reliable comfort.",
@@ -92,7 +92,7 @@ SVC = {
  "duct-cleaning": {
    "icon":"air-vent", "kicker":"Duct Cleaning in London, ON",
    "h1":"Improve Your Home's Air Quality with Professional Duct Cleaning",
-   "intro":"Breathe easier with professional duct cleaning services from London Heating &amp; Cooling. We provide thorough air duct cleaning in London, Ontario and surrounding Middlesex County communities to help remove dust, allergens, and buildup that affect your indoor air quality and system efficiency. Our experienced team uses advanced equipment to keep your HVAC system running smoothly while creating a cleaner, healthier home.",
+   "intro":"Breathe easier with professional duct cleaning services from London Furnace Repair. We provide thorough air duct cleaning in London, Ontario and surrounding Middlesex County communities to help remove dust, allergens, and buildup that affect your indoor air quality and system efficiency. Our experienced team uses advanced equipment to keep your HVAC system running smoothly while creating a cleaner, healthier home.",
    "meta":"Professional air duct cleaning in London, Ontario. Remove dust & allergens, improve airflow, lower energy costs. Free quote from licensed local experts.",
    "problem_h":"Dust, allergens, and weak airflow from your vents?",
    "problem_p":"Dust and debris in ductwork reduce air quality and HVAC efficiency. Our duct cleaning in London, Ontario improves airflow and supports healthier indoor air.",
@@ -222,16 +222,15 @@ HOME_SERVICES = [
 ]
 
 HOME_FAQ = [
- ("How quickly can I get furnace repair in London, Ontario?","Our expert technicians provide fast, reliable furnace repair in London and surrounding Middlesex County areas. We prioritize emergency service calls so your home heating is restored promptly — often the same day."),
- ("What types of AC repair services do you offer?","We offer comprehensive AC repair in London, including diagnostics, component replacement, and maintenance for central air conditioning and ductless mini-split systems to meet your cooling needs."),
- ("How do I know if my heat pump needs repair or replacement?","Signs like uneven heating or cooling, unusual noises, or rising energy bills may indicate your heat pump needs service. Our team provides professional repair and installation for optimal year-round comfort."),
- ("Why is duct cleaning important for my home?","Dust and allergens reduce the efficiency of your heating and cooling system. Professional duct cleaning helps your HVAC system run better and improves the indoor air quality your family breathes."),
- ("Can you repair or replace my thermostat?","Yes. We provide thermostat repair and replacement in London, including programmable and smart models, to optimize your heating and cooling performance and lower energy use."),
- ("What types of fireplaces can you install?","We install gas, electric, and wood-burning fireplaces, safely integrating them with your home heating system for warmth, ambiance, and code-compliant peace of mind."),
- ("Do you install ductless AC systems, and are they energy-efficient?","Absolutely. Our ductless AC installations provide energy-efficient cooling and heating for precise comfort without the need for ductwork."),
- ("Are your technicians licensed and experienced?","Every technician on our team is fully licensed, insured, and trained to deliver professional service using proven repair techniques."),
- ("Do you serve areas outside of London, Ontario?","Yes. We provide HVAC services throughout London and nearby communities including Pickering, Whitby, Oshawa, Bowmanville, and across Middlesex County."),
- ("Do you offer 24/7 emergency service?","We do. Heating and cooling emergencies don't keep business hours, so neither do we — call us any time, day or night."),
+ ("My furnace quit in the middle of a cold night. How fast can you get here?","No-heat calls go to the front of our list. We answer the phone around the clock in London and Middlesex County and aim to have a technician at your door the same day, because a dead furnace in a deep freeze is a safety issue, not a wait-until-morning one."),
+ ("Should I repair my old furnace or replace it?","We tell you straight. If the repair is small and the furnace has years left, we fix it. If it is unsafe, badly worn, or costing you a fortune in gas, we walk you through replacement options and the efficiency you would gain. No pressure, just the numbers."),
+ ("Do you check for carbon monoxide and gas safety?","Yes. On every heating call we inspect the heat exchanger, burners, and venting and test for carbon monoxide. If we find a cracked exchanger or a gas leak, we shut the system down and tell you exactly what it will take to make it safe again."),
+ ("Can you service heat pumps and gas fireplaces too?","We do. Heat pumps, gas and wood-burning fireplaces, and high-efficiency furnaces are all part of our heating work. We repair, install, and tune them so your home has a dependable source of warmth all winter."),
+ ("Can you repair or replace my thermostat?","Yes. A faulty thermostat is a common reason a furnace short-cycles or won't fire. We repair and replace all brands, including programmable and smart models, and make sure they talk to your heating system correctly."),
+ ("Do you handle cooling and air quality as well?","Absolutely. We are a full HVAC company, so once winter is behind us we look after central air, ductless systems, and duct cleaning. Heating is our lead, but we keep your home comfortable in July as well as January."),
+ ("Are your technicians licensed and insured?","Every technician is fully licensed, insured, and trained on gas-fired and high-efficiency heating equipment. You get qualified people working on the system that keeps your family warm."),
+ ("Do you offer 24/7 emergency service?","We do. Furnaces rarely fail at a convenient hour, so we take emergency calls any time, day or night, weekends and holidays included."),
+ ("Do you serve areas outside of London, Ontario?",f"Yes. We serve London and nearby communities including {', '.join([a for a in SERVICE_AREAS if a!=CITY][:4])}, and the surrounding area."),
 ]
 
 def home_service_card(ic, title, text, url):
@@ -269,9 +268,9 @@ def build_home():
   <div class="hero__glow"></div>
   <div class="container">
     <div class="hero__copy reveal">
-      <span class="eyebrow on-dark">{CITY}'s Trusted HVAC Experts</span>
-      <h1>Expert Heating &amp; Cooling Repair in <span class="accent">{CITY}, ON</span></h1>
-      <p class="hero__sub">At {SITE_NAME}, we treat your home like our own. Serving {CITY}, Ontario and {COUNTY}, we deliver honest, efficient, and dependable HVAC solutions for year-round comfort.</p>
+      <span class="eyebrow on-dark">{CITY}'s Furnace &amp; Heating Specialists</span>
+      <h1>No Heat? Get Your Furnace Running Fast in <span class="accent">{CITY}, ON</span></h1>
+      <p class="hero__sub">When a London winter turns dangerous, a dead furnace can&#39;t wait. {SITE_NAME} answers no-heat calls day and night, checks for carbon monoxide and safety faults, and gets warm air moving again. We handle every part of your home comfort, but heating is what we do best.</p>
       <div class="hero__cta">
         <a class="btn btn-primary btn-lg" href="#quote">Get a Free Quote</a>
         <a class="btn btn-ghost-light btn-lg" href="/services/">Explore Our Services</a>
@@ -301,9 +300,9 @@ def build_home():
     <div class="split">
       <div class="reveal">
         <span class="eyebrow">About Us</span>
-        <h2>Your Trusted Partner for Year-Round Comfort in London</h2>
-        <p class="lead">At London Heating &amp; Cooling, we understand that a broken air conditioner or failing furnace is more than an inconvenience — it's a disruption to your life.</p>
-        <p>As a local, family-run company, we specialize in heating and cooling solutions tailored to the London, Ontario climate. From maintaining your air conditioner through a humid July to fixing your furnace in the depths of January, our team provides honest advice and technical excellence on every visit.</p>
+        <h2>The London Team That Keeps Your Heat On All Winter</h2>
+        <p class="lead">London Furnace Repair is a licensed, family-run heating and HVAC company in London, Ontario that specializes in furnace repair, installation, and no-heat emergencies across the city and Middlesex County. A furnace that quits in a London January is a real problem, and we treat it that way.</p>
+        <p>Heating is our focus. We diagnose furnaces, heat pumps, and gas fireplaces, test for carbon monoxide, and get warm air moving again before the cold can do any damage. We also look after cooling, ductwork, and thermostats, so one local team can keep your home safe and comfortable in every season. You get straight answers, honest pricing, and clean work on every visit.</p>
         <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px">
           <a class="btn btn-secondary" href="/about/">More About Us</a>
           <a class="btn btn-outline" href="/contact/">Contact the Team</a>
@@ -331,8 +330,8 @@ def build_home():
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">What We Do</span>
-      <h2>Comprehensive Heating &amp; Cooling Services in London</h2>
-      <p>From emergency repairs to long-term comfort solutions, we provide a full range of heating and air conditioning services to keep your home running smoothly year-round.</p>
+      <h2>Heating-First HVAC Services for London Homes</h2>
+      <p>We lead with furnaces, heat pumps, and fireplaces that carry your home through the cold months, and we round out the year with cooling, duct, and thermostat work. Whatever the season, one local crew keeps your house warm, safe, and comfortable.</p>
     </div>
     <div class="svc-grid">{cards}</div>
     <div class="center" style="margin-top:34px">
@@ -345,13 +344,13 @@ def build_home():
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">Our Process</span>
-      <h2>Why Choose London Heating &amp; Cooling?</h2>
-      <p>We believe in transparency, respect, and quality workmanship. Here's what every customer can expect.</p>
+      <h2>Why London Homeowners Call Us First</h2>
+      <p>Clear answers, careful work, and a team that stands behind the heat in your home. Here is what every call looks like.</p>
     </div>
     <div class="steps">
-      <div class="step reveal"><div class="step__ic">{icon('search',size=26)}</div><div class="step__num"></div><h3>Transparent Consultation</h3><p>We start with a thorough assessment of your heating and cooling needs, explaining your options in plain language — whether it's a simple furnace repair, a new AC, or a heat pump install.</p></div>
-      <div class="step reveal d1"><div class="step__ic">{icon('wrench',size=26)}</div><div class="step__num"></div><h3>Professional, Clean Work</h3><p>Our technicians arrive on time, work efficiently, and leave your home spotless — whether installing a furnace, servicing your AC, or replacing a thermostat.</p></div>
-      <div class="step reveal d2"><div class="step__ic">{icon('headset',size=26)}</div><div class="step__num"></div><h3>Ongoing Support</h3><p>Our relationship doesn't end when the job is done. We provide repair and maintenance services to keep your system running at peak efficiency for years.</p></div>
+      <div class="step reveal"><div class="step__ic">{icon('search',size=26)}</div><div class="step__num"></div><h3>Honest Diagnosis First</h3><p>We find out exactly why the heat is off before we quote a dollar. You hear what is wrong, what it takes to fix it, and whether a repair or a new furnace makes more sense for your home.</p></div>
+      <div class="step reveal d1"><div class="step__ic">{icon('wrench',size=26)}</div><div class="step__num"></div><h3>Safe, Tidy Workmanship</h3><p>Our technicians arrive on time, check for gas and carbon monoxide hazards, complete the work right, and leave your home as clean as they found it.</p></div>
+      <div class="step reveal d2"><div class="step__ic">{icon('headset',size=26)}</div><div class="step__num"></div><h3>Here When It Gets Cold</h3><p>We answer no-heat emergencies through the night and keep your furnace tuned ahead of winter, so the coldest weeks of the year never catch your family off guard.</p></div>
     </div>
   </div>
 </section>
@@ -445,7 +444,7 @@ def build_services_index():
 def build_about():
     out = head(
       title=f"About Us | {SITE_NAME}",
-      desc=f"London Heating & Cooling is a local, family-run HVAC company serving London, Ontario with honest, reliable heating and cooling care. Meet the team.",
+      desc=f"London Furnace Repair is a local, family-run HVAC company serving London, Ontario with honest, reliable heating and cooling care. Meet the team.",
       path="/about/",
       schema_blocks=[schema_localbusiness(), schema_breadcrumb([("Home","/"),("About","/about/")])])
     out += f'''
@@ -464,7 +463,7 @@ def build_about():
       <div class="reveal">
         <span class="eyebrow">Our Story</span>
         <h2>People Over Profits, Season After Season</h2>
-        <p>At London Heating &amp; Cooling, we believe every family deserves a comfortable, healthy home. As a family-oriented business based in London, Ontario, our mission is simple: keep your home comfortable through every season with the same high standard of care we'd expect for our own households.</p>
+        <p>At London Furnace Repair, we believe every family deserves a comfortable, healthy home. As a family-oriented business based in London, Ontario, our mission is simple: keep your home comfortable through every season with the same high standard of care we'd expect for our own households.</p>
         <p>Our journey began with one goal — to provide honest, transparent home services that put people first. We know that when your furnace or air conditioner fails, it's more than an inconvenience; it's a disruption to your family's peace of mind. That's why we've built our reputation on being a reliable HVAC company that delivers tailored solutions with a personal touch.</p>
       </div>
       <div class="split__media reveal d1">
@@ -502,7 +501,7 @@ def build_about():
   </div>
 </section>
 
-{cta_band(title="Experience the London Heating &amp; Cooling Difference",
+{cta_band(title="Experience the London Furnace Repair Difference",
           text="Join your neighbours who count on us for honest, dependable home comfort. Reach out for your free quote today.")}
 {areas_section()}
 '''
@@ -513,7 +512,7 @@ def build_about():
 def build_contact():
     out = head(
       title=f"Contact Us | {SITE_NAME}",
-      desc=f"Contact London Heating & Cooling for fast, friendly HVAC service in London, Ontario. Call {PHONE_DISPLAY} or request a free quote online. Open 24/7.",
+      desc=f"Contact London Furnace Repair for fast, friendly HVAC service in London, Ontario. Call {PHONE_DISPLAY} or request a free quote online. Open 24/7.",
       path="/contact/",
       schema_blocks=[schema_localbusiness(), schema_breadcrumb([("Home","/"),("Contact","/contact/")])])
     out += f'''
@@ -522,7 +521,7 @@ def build_contact():
     {crumbs([("Home","/"),("Contact","")])}
     <span class="eyebrow on-dark">Contact Us</span>
     <h1>Let's Get Your Comfort Back on Track</h1>
-    <p>Is your air conditioner making a strange noise? Ready to upgrade your furnace before winter? Whatever your home comfort need, the London Heating &amp; Cooling team is ready to help — without the stress.</p>
+    <p>Is your air conditioner making a strange noise? Ready to upgrade your furnace before winter? Whatever your home comfort need, the London Furnace Repair team is ready to help — without the stress.</p>
   </div>
 </section>
 
@@ -680,7 +679,7 @@ def blog_bodies():
     return {
  "how-often-should-you-service-your-hvac-system-in-london-ontario": '''
 <p class="lead">Living in London, Ontario means dealing with real seasons. Winter can be bitterly cold, and summer near Lake Erie brings long stretches of heat and humidity. Your HVAC system doesn't get much of a break — which is exactly why regular maintenance matters.</p>
-<p>At London Heating &amp; Cooling, we often hear the same question: <em>how often should I service my heating and cooling system?</em> Our answer is simple. At minimum, twice per year.</p>
+<p>At London Furnace Repair, we often hear the same question: <em>how often should I service my heating and cooling system?</em> Our answer is simple. At minimum, twice per year.</p>
 <h2>Why Regular HVAC Service Is So Important</h2>
 <p>Your furnace and air conditioner run for thousands of hours every year. Over time, dust builds up inside the system, filters get clogged, electrical connections loosen, and moving parts wear down. None of this happens overnight, which is why problems can go unnoticed until something suddenly stops working.</p>
 <p>When maintenance is skipped, homeowners often notice higher energy bills, uneven temperatures from room to room, poor airflow, or air that feels dusty and stale. Small issues that could have been corrected during a routine visit can turn into expensive repairs at the worst possible time.</p>
@@ -699,7 +698,7 @@ def blog_bodies():
 <h2>Don't Wait Until Something Fails</h2>
 <p>Many service calls happen in the middle of a heat wave or during a cold snap. By then, the system has already been under stress for weeks. Preventative maintenance is far more affordable — and far less stressful — than emergency repairs.</p>
 <p>Scheduling service before each major season gives you peace of mind, knowing your system has been inspected, cleaned, and tested by a professional.</p>
-<h2>Book Your Service With London Heating &amp; Cooling</h2>
+<h2>Book Your Service With London Furnace Repair</h2>
 <p>We're proud to serve homeowners throughout London and the surrounding Middlesex County area. As a local, family-operated company, we focus on honest service and long-term relationships with our customers. If it has been more than a year since your last HVAC service, now is the time to schedule.</p>
 ''',
  "signs-your-furnace-needs-repair-before-a-london-winter": '''
@@ -723,7 +722,7 @@ def blog_bodies():
 <h2>Why Acting Early Matters</h2>
 <p>Putting off furnace repairs can lead to a complete system breakdown during freezing temperatures. Emergency repairs in the middle of winter are not only stressful but can also be more costly. Taking care of small repairs now helps protect your furnace, extend its lifespan, and give you peace of mind before the coldest months arrive.</p>
 <h2>Need Furnace Repair in London, Ontario?</h2>
-<p>At London Heating &amp; Cooling, we understand how important reliable heat is for your home and family. As a local, family-operated HVAC company, we provide fast, dependable furnace repair throughout London and nearby Middlesex County communities. If you've noticed any of these warning signs, don't wait for winter to put your system to the test.</p>
+<p>At London Furnace Repair, we understand how important reliable heat is for your home and family. As a local, family-operated HVAC company, we provide fast, dependable furnace repair throughout London and nearby Middlesex County communities. If you've noticed any of these warning signs, don't wait for winter to put your system to the test.</p>
 ''',
  "why-your-air-conditioner-struggles-during-humid-london-summers": '''
 <p class="lead">If your air conditioner seems to run all day but your home still feels sticky and uncomfortable, you're not imagining it. Summers in London, Ontario aren't just hot — they're humid. Sitting close to Lake Erie, our area sees moisture levels that play a major role in how comfortable your home feels, even when the temperature looks fine.</p>
@@ -747,14 +746,14 @@ def blog_bodies():
 <h2>Don't Let Your System Run Nonstop</h2>
 <p>If your air conditioner is running constantly but your home still feels uncomfortable, it's a sign something needs attention. Letting the system run nonstop not only increases your energy bills but can also shorten the lifespan of the equipment. Addressing the issue early can prevent larger repairs later in the season.</p>
 <h2>Schedule AC Service in London Today</h2>
-<p>At London Heating &amp; Cooling, we understand how challenging Ontario summers can be. As a family-owned and operated HVAC company, we provide honest, reliable air conditioning repair and maintenance throughout London and the surrounding Middlesex County area. If your home feels humid or your AC is struggling to keep up, we'll help restore comfort and keep your cooling system running efficiently all summer long.</p>
+<p>At London Furnace Repair, we understand how challenging Ontario summers can be. As a family-owned and operated HVAC company, we provide honest, reliable air conditioning repair and maintenance throughout London and the surrounding Middlesex County area. If your home feels humid or your AC is struggling to keep up, we'll help restore comfort and keep your cooling system running efficiently all summer long.</p>
 ''',
     }
 
 # ============================================================ PRIVACY + 404
 def build_privacy():
     out = head(title=f"Privacy Policy | {SITE_NAME}",
-      desc="Privacy policy for London Heating & Cooling — how we collect, use, and protect your personal information.",
+      desc="Privacy policy for London Furnace Repair — how we collect, use, and protect your personal information.",
       path="/privacy-policy/",
       schema_blocks=[schema_breadcrumb([("Home","/"),("Privacy Policy","/privacy-policy/")])])
     out += f'''
@@ -818,9 +817,28 @@ def build_404():
         f.write(out)
 
 # ============================================================ ROOT FILES
+LLMS = f"""# {SITE_NAME}
+
+> {SITE_NAME} is a licensed, family-run heating and HVAC company in {CITY}, {REGION} that specializes in furnace repair, installation, and 24/7 no-heat emergencies across {CITY} and {COUNTY}. Heating is our focus, and we also handle cooling, heat pumps, fireplaces, thermostats, and duct cleaning.
+
+Phone: {PHONE_DISPLAY}
+Email: {EMAIL}
+Service area: {CITY}, {REGION} and {COUNTY} (including {', '.join([a for a in SERVICE_AREAS if a!=CITY][:4])})
+
+## Key pages
+- Home: {DOMAIN}/
+- About: {DOMAIN}/about/
+- Services: {DOMAIN}/services/
+- Furnace Repair: {DOMAIN}/services/furnace-repair/
+- Heat Pump Repair & Installation: {DOMAIN}/services/heat-pump-repair-installation/
+- Fireplace Installation: {DOMAIN}/services/fireplace-installation/
+- Contact: {DOMAIN}/contact/
+"""
+
 def build_root_files():
     write_root("CNAME", "londonfurnacerepair.ca\n")
     write_root("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n")
+    write_root("llms.txt", LLMS)
     write_root(".nojekyll", "")
     urls = ["/","/about/","/services/","/blog/","/contact/","/privacy-policy/"]
     urls += [f"/services/{s['slug']}/" for s in SERVICES]
