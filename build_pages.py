@@ -29,7 +29,7 @@ SVC = {
    "features":[
      ("snowflake","Fast, Reliable AC Repairs for Any Issue","Whether your air conditioner won't start, blows warm air, or makes noise, our emergency AC repair delivers fast diagnostics and same-day service to restore reliable cooling quickly."),
      ("settings","Maintenance to Avoid Future Breakdowns","Regular AC maintenance improves efficiency, extends your unit's life, and prevents breakdowns. We inspect refrigerant, airflow, coils, thermostats, and ductwork to keep your AC running safely all season."),
-     ("shield","Trusted Local AC Experts","As a family-run HVAC company in London, our certified technicians service all AC makes and models with transparent pricing, fast response times, and long-lasting repairs."),
+     ("shield","Experienced London AC Experts","As a licensed HVAC company in London, our certified technicians service all AC makes and models with transparent pricing, fast response times, and long-lasting repairs."),
    ],
    "rev":[3,4,5],
  },
@@ -43,7 +43,7 @@ SVC = {
    "features":[
      ("fan","Custom Ductless Solutions for Your Space","Our certified technicians design and install ductless mini-split systems tailored to your home or office, delivering precise temperature control, quiet operation, and energy efficiency from consultation to installation."),
      ("leaf","Energy-Efficient and Flexible Installation","Ductless systems need no ductwork, allowing faster, less disruptive installation. Proper placement ensures optimal performance, lower energy bills, flexible zoning, and reliable comfort year-round."),
-     ("shield","Trusted Local Installation Experts","As a family-run HVAC company in London, we deliver professional ductless AC installation with quality workmanship you can rely on for long-term energy savings."),
+     ("shield","Experienced London Installation Experts","As a licensed HVAC company in London, we deliver professional ductless AC installation with quality workmanship you can rely on for long-term energy savings."),
    ],
    "rev":[1,4,2],
  },
@@ -57,7 +57,7 @@ SVC = {
    "features":[
      ("refresh","Fast Heat Pump Repairs When the Heat Drops","If your heat pump stops heating, frosts up, or struggles in the cold, our same-day service finds the fault fast and restores reliable warmth, with backup heat sorted out so you are never left in the cold."),
      ("zap","Right-Sized Installation for London Winters","A heat pump only saves money if it is sized and set up for our climate. We help you pick a cold-climate system, pair it with proper backup heat, and install it for efficient, dependable comfort."),
-     ("shield","Local Heat Pump Experts You Can Trust","As a family-run heating company in London, our certified technicians service and install all heat pump brands with honest pricing and clear, straight advice."),
+     ("shield","Experienced London Heat Pump Experts","As a licensed heating company in London, our certified technicians service and install all heat pump brands with honest pricing and clear, straight advice."),
    ],
    "rev":[2,3,0],
  },
@@ -71,7 +71,7 @@ SVC = {
    "features":[
      ("fireplace","Installation for Any Style of Fireplace","Gas, electric, or wood-burning, our certified technicians assess layout, clearances, and venting and handle the full install, giving you a genuine source of heat and a focal point in the room."),
      ("shield","Safe, Code-Compliant Venting and Gas Work","Heating safety is the priority. Every install meets local building and gas codes, with proper venting and carbon monoxide protection so your fireplace warms the room without putting the household at risk."),
-     ("award","Trusted Local Heating Craftsmanship","As a family-run heating company in London, we deliver clean, careful fireplace installation with transparent pricing and workmanship built to last through many winters."),
+     ("award","Careful London Heating Craftsmanship","As a licensed heating company in London, we deliver clean, careful fireplace installation with transparent pricing and workmanship built to last through many winters."),
    ],
    "rev":[5,1,3],
  },
@@ -85,7 +85,7 @@ SVC = {
    "features":[
      ("gauge","Fast and Reliable Thermostat Repairs","Whether your thermostat won't turn on, shows wrong temperatures, or short-cycles, our service delivers fast diagnostics and precise repairs for consistent comfort and efficient HVAC control."),
      ("settings","Upgrade with Modern Replacement","If your thermostat is outdated, we install programmable or smart thermostats for better scheduling, remote control, and energy monitoring — fully integrated with your HVAC system."),
-     ("shield","Trusted Local HVAC Experts","As a family-run HVAC company in London, our certified technicians repair and replace all thermostat brands with transparent pricing and reliable service."),
+     ("shield","Experienced London HVAC Experts","As a licensed HVAC company in London, our certified technicians repair and replace all thermostat brands with transparent pricing and reliable service."),
    ],
    "rev":[4,0,5],
  },
@@ -99,11 +99,38 @@ SVC = {
    "features":[
      ("air-vent","Thorough Cleaning for Healthier Air","Our certified technicians use professional equipment to remove dust, pollen, and pet dander from ducts, vents, and air handlers — improving air quality while boosting HVAC efficiency and lowering energy costs."),
      ("droplets","Protect Your System and Extend Its Life","Clean ducts support HVAC longevity. Our service keeps your furnace, air conditioner, or heat pump efficient — improving airflow, preventing breakdowns, and lowering repair and energy costs."),
-     ("shield","Trusted Local Experts","As a family-run HVAC company in London, we provide reliable, professional duct cleaning with transparent pricing and healthier air for lasting home comfort."),
+     ("shield","Experienced London Experts","As a licensed HVAC company in London, we provide reliable, professional duct cleaning with transparent pricing and healthier air for lasting home comfort."),
    ],
    "rev":[0,2,4],
  },
 }
+
+# Per-service top photo (recovered WordPress media). Files verified present in
+# assets/img/wp/. Services without a matching subject fall back to the
+# technician/contractor photo so no src is ever broken.
+_TECH = "London-Ontario-HVAC-technician.png"
+_CONTRACTOR = "London-Ontario-HVAC-Contractor.png"
+SVC_PHOTO = {
+ "furnace-repair":               ("furnace-1536x1024-2.jpeg",
+   "Gas furnace serviced by a London Furnace Repair technician in London, Ontario"),
+ "ac-repair":                    (_CONTRACTOR,
+   "London Furnace Repair HVAC contractor on an air conditioning service call in London, Ontario"),
+ "ductless-ac-installation":     (_CONTRACTOR,
+   "London Furnace Repair contractor installing a ductless mini-split system in London, Ontario"),
+ "heat-pump-repair-installation":(_CONTRACTOR,
+   "London Furnace Repair contractor servicing a heat pump in London, Ontario"),
+ "fireplace-installation":       (_CONTRACTOR,
+   "London Furnace Repair contractor completing a fireplace installation in London, Ontario"),
+ "thermostat-repair-replacement":(_TECH,
+   "London Furnace Repair technician adjusting a home thermostat in London, Ontario"),
+ "duct-cleaning":                (_TECH,
+   "London Furnace Repair technician cleaning home air ducts in London, Ontario"),
+}
+
+def svc_photo(slug):
+    fname, alt = SVC_PHOTO.get(slug, (_TECH, f"London Furnace Repair HVAC technician in {CITY}, Ontario"))
+    return (f'<img class="svc-photo" src="/assets/img/wp/{fname}" width="1024" height="683" '
+            f'loading="lazy" decoding="async" alt="{alt}">')
 
 REVIEW_POOL = [
   ("They had our furnace running again the same day — on one of the coldest nights of the year. Fast and professional.","Mya C.","London"),
@@ -171,6 +198,7 @@ def build_service(slug, data):
     <div class="split">
       <div>
         <span class="eyebrow">Why Homeowners Call Us</span>
+        {svc_photo(slug)}
         <div class="callout reveal" style="margin-bottom:24px">
           <h3>{data["problem_h"]}</h3>
           <p>{data["problem_p"]}</p>
@@ -206,7 +234,7 @@ def build_service(slug, data):
 </section>
 
 {cta_band(title="We Can Help Solve Your "+nav_label.replace('&amp;','&')+" Needs",
-          text="Don't let a comfort problem disrupt your home. Get fast, reliable service from London's trusted local HVAC team.")}
+          text="Don't let a comfort problem disrupt your home. Get fast, reliable service from London's licensed HVAC team.")}
 '''
     out += page_end()
     write(url, out)
@@ -291,7 +319,7 @@ def build_home():
     <div class="trust-strip__item"><span class="ic">{icon('clock',size=26)}</span><div><b>24/7</b><span>Emergency service</span></div></div>
     <div class="trust-strip__item"><span class="ic">{icon('shield',size=26)}</span><div><b>Licensed</b><span>&amp; fully insured</span></div></div>
     <div class="trust-strip__item"><span class="ic">{icon('dollar',size=26)}</span><div><b>Free</b><span>No-obligation quotes</span></div></div>
-    <div class="trust-strip__item"><span class="ic">{icon('users',size=26)}</span><div><b>Local</b><span>Family-run &amp; trusted</span></div></div>
+    <div class="trust-strip__item"><span class="ic">{icon('shield',size=26)}</span><div><b>Licensed</b><span>Fully licensed &amp; insured</span></div></div>
   </div>
 </section>
 
@@ -301,7 +329,7 @@ def build_home():
       <div class="reveal">
         <span class="eyebrow">About Us</span>
         <h2>The London Team That Keeps Your Heat On All Winter</h2>
-        <p class="lead">London Furnace Repair is a licensed, family-run heating and HVAC company in London, Ontario that specializes in furnace repair, installation, and no-heat emergencies across the city and Middlesex County. A furnace that quits in a London January is a real problem, and we treat it that way.</p>
+        <p class="lead">London Furnace Repair is a licensed, insured heating and HVAC company in London, Ontario that specializes in furnace repair, installation, and no-heat emergencies across the city and Middlesex County. A furnace that quits in a London January is a real problem, and we treat it that way.</p>
         <p>Heating is our focus. We diagnose furnaces, heat pumps, and gas fireplaces, test for carbon monoxide, and get warm air moving again before the cold can do any damage. We also look after cooling, ductwork, and thermostats, so one local team can keep your home safe and comfortable in every season. You get straight answers, honest pricing, and clean work on every visit.</p>
         <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px">
           <a class="btn btn-secondary" href="/about/">More About Us</a>
@@ -309,18 +337,8 @@ def build_home():
         </div>
       </div>
       <div class="split__media reveal d1">
-        <div class="media-panel">
-          <div class="media-panel__row">
-            <div class="media-chip warm"><span class="ic">{icon('flame',size=24)}</span><b>Heating</b><span>Furnaces, heat pumps &amp; fireplaces</span></div>
-            <div class="media-chip cool"><span class="ic">{icon('snowflake',size=24)}</span><b>Cooling</b><span>Central air &amp; ductless systems</span></div>
-            <div class="media-chip cool"><span class="ic">{icon('droplets',size=24)}</span><b>Air Quality</b><span>Duct cleaning &amp; ventilation</span></div>
-            <div class="media-chip warm"><span class="ic">{icon('gauge',size=24)}</span><b>Controls</b><span>Smart &amp; programmable thermostats</span></div>
-            <div class="media-chip media-chip--wide cool" style="display:flex;align-items:center;gap:14px">
-              <span class="ic" style="margin:0">{icon('headset',size=24)}</span>
-              <div><b>Real local technicians, on call 24/7</b><span>Serving London &amp; Middlesex County, every day of the year</span></div>
-            </div>
-          </div>
-        </div>
+        <img class="media-photo" src="/assets/img/wp/London-Ontario-HVAC-technician.png" width="1024" height="1024" loading="lazy" decoding="async" alt="London Furnace Repair HVAC technician servicing a home heating system in London, Ontario">
+        <img class="badge-img" src="/assets/img/wp/quality-guarantee.png" width="280" height="280" loading="lazy" decoding="async" alt="Satisfaction guarantee" style="margin-top:18px">
       </div>
     </div>
   </div>
@@ -360,7 +378,7 @@ def build_home():
     <div class="section-head reveal">
       <span class="eyebrow">Testimonials</span>
       <h2>What London Homeowners Are Saying</h2>
-      <p>We're proud to be the heating and cooling partner our neighbours trust and recommend.</p>
+      <p>We're proud to be the heating and cooling partner our neighbours recommend.</p>
     </div>
     <div class="reviews">{revs}</div>
   </div>
@@ -444,7 +462,7 @@ def build_services_index():
 def build_about():
     out = head(
       title=f"About Us | {SITE_NAME}",
-      desc=f"London Furnace Repair is a local, family-run HVAC company serving London, Ontario with honest, reliable heating and cooling care. Meet the team.",
+      desc=f"London Furnace Repair is a licensed, insured HVAC company serving London, Ontario with honest, reliable heating and cooling care. Meet the team.",
       path="/about/",
       schema_blocks=[schema_localbusiness(), schema_breadcrumb([("Home","/"),("About","/about/")])])
     out += f'''
@@ -452,8 +470,8 @@ def build_about():
   <div class="container">
     {crumbs([("Home","/"),("About","")])}
     <span class="eyebrow on-dark">About Us</span>
-    <h1>A Local Tradition of Home Comfort</h1>
-    <p>We aren't just technicians — we're your neighbours, committed to keeping London families comfortable through every season.</p>
+    <h1>Heating and Cooling Care for London Homes</h1>
+    <p>We're a licensed, insured HVAC company committed to keeping London families comfortable through every season.</p>
   </div>
 </section>
 
@@ -463,13 +481,13 @@ def build_about():
       <div class="reveal">
         <span class="eyebrow">Our Story</span>
         <h2>People Over Profits, Season After Season</h2>
-        <p>At London Furnace Repair, we believe every family deserves a comfortable, healthy home. As a family-oriented business based in London, Ontario, our mission is simple: keep your home comfortable through every season with the same high standard of care we'd expect for our own households.</p>
+        <p>At London Furnace Repair, we believe every household deserves a comfortable, healthy home. As a licensed, insured HVAC company based in London, Ontario, our mission is simple: keep your home comfortable through every season with the same high standard of care we'd expect in our own homes.</p>
         <p>Our journey began with one goal — to provide honest, transparent home services that put people first. We know that when your furnace or air conditioner fails, it's more than an inconvenience; it's a disruption to your family's peace of mind. That's why we've built our reputation on being a reliable HVAC company that delivers tailored solutions with a personal touch.</p>
       </div>
       <div class="split__media reveal d1">
         <div class="media-panel">
           <div class="media-panel__row">
-            <div class="media-chip warm"><span class="ic">{icon('users',size=24)}</span><b>Family-Run</b><span>Locally owned &amp; operated</span></div>
+            <div class="media-chip warm"><span class="ic">{icon('shield',size=24)}</span><b>Licensed &amp; Insured</b><span>Qualified local technicians</span></div>
             <div class="media-chip cool"><span class="ic">{icon('shield',size=24)}</span><b>Licensed</b><span>Insured &amp; certified techs</span></div>
             <div class="media-chip cool"><span class="ic">{icon('leaf',size=24)}</span><b>Efficient</b><span>Energy-saving systems</span></div>
             <div class="media-chip warm"><span class="ic">{icon('clock',size=24)}</span><b>Available</b><span>24/7 emergency service</span></div>
@@ -484,7 +502,7 @@ def build_about():
   <div class="container">
     <div class="split reverse">
       <div class="split__media reveal">
-        <div class="callout"><h3>Why London Families Trust Us</h3><p>We specialize in everything from high-efficiency furnace installation to complex central-air diagnostics. Our team handles both residential and light-commercial systems, so whether you're at home or at work, your environment stays perfectly regulated.</p></div>
+        <div class="callout"><h3>Why London Homeowners Call Us</h3><p>We specialize in everything from high-efficiency furnace installation to complex central-air diagnostics. Our team handles both residential and light-commercial systems, so whether you're at home or at work, your environment stays properly regulated.</p></div>
       </div>
       <div class="reveal d1">
         <span class="eyebrow">Our Commitment</span>
@@ -540,7 +558,7 @@ def build_contact():
         <ul class="feature-list" style="margin-top:24px">
           {feature_item('clock','Fast Response','We prioritise emergency calls and aim to respond the same day.')}
           {feature_item('dollar','Free, No-Obligation Quotes','Know your options and pricing before committing to anything.')}
-          {feature_item('shield','Licensed &amp; Insured','Professional, certified service you can trust in your home.')}
+          {feature_item('shield','Licensed &amp; Insured','Professional, certified service in your home.')}
         </ul>
       </div>
       <div class="split__media reveal d1">{quote_form(heading="Get a Free Quote", sub="Tell us about your heating or cooling issue.", id_suffix="contact")}</div>
@@ -653,7 +671,7 @@ def article_shell(p, body_html):
     <article class="article reveal">{body_html}
       <div class="note-banner" style="margin-top:30px;background:var(--bg-alt);border:1px solid var(--line);color:var(--body)">
         <strong style="color:var(--navy-900)">Need help now?</strong>
-        <a href="/contact/">Request a free quote</a> and a local London technician will get back to you fast — we're here 24/7.
+        <a href="/contact/">Request a free quote</a> and a London technician will get back to you fast. We're here 24/7.
       </div>
     </article>
   </div>
@@ -699,7 +717,7 @@ def blog_bodies():
 <p>Many service calls happen in the middle of a heat wave or during a cold snap. By then, the system has already been under stress for weeks. Preventative maintenance is far more affordable — and far less stressful — than emergency repairs.</p>
 <p>Scheduling service before each major season gives you peace of mind, knowing your system has been inspected, cleaned, and tested by a professional.</p>
 <h2>Book Your Service With London Furnace Repair</h2>
-<p>We're proud to serve homeowners throughout London and the surrounding Middlesex County area. As a local, family-operated company, we focus on honest service and long-term relationships with our customers. If it has been more than a year since your last HVAC service, now is the time to schedule.</p>
+<p>We're proud to serve homeowners throughout London and the surrounding Middlesex County area. As a licensed, insured HVAC company, we focus on honest service and long-term relationships with our customers. If it has been more than a year since your last HVAC service, now is the time to schedule.</p>
 ''',
  "signs-your-furnace-needs-repair-before-a-london-winter": '''
 <p class="lead">Winter in London, Ontario is serious business. When temperatures fall well below freezing and the wind comes off Lake Erie, your furnace becomes the heart of your home. It keeps your family warm, protects your plumbing from freezing, and makes everyday life comfortable.</p>
@@ -722,7 +740,7 @@ def blog_bodies():
 <h2>Why Acting Early Matters</h2>
 <p>Putting off furnace repairs can lead to a complete system breakdown during freezing temperatures. Emergency repairs in the middle of winter are not only stressful but can also be more costly. Taking care of small repairs now helps protect your furnace, extend its lifespan, and give you peace of mind before the coldest months arrive.</p>
 <h2>Need Furnace Repair in London, Ontario?</h2>
-<p>At London Furnace Repair, we understand how important reliable heat is for your home and family. As a local, family-operated HVAC company, we provide fast, dependable furnace repair throughout London and nearby Middlesex County communities. If you've noticed any of these warning signs, don't wait for winter to put your system to the test.</p>
+<p>At London Furnace Repair, we understand how important reliable heat is for your home and family. As a licensed, insured HVAC company, we provide fast, dependable furnace repair throughout London and nearby Middlesex County communities. If you've noticed any of these warning signs, don't wait for winter to put your system to the test.</p>
 ''',
  "why-your-air-conditioner-struggles-during-humid-london-summers": '''
 <p class="lead">If your air conditioner seems to run all day but your home still feels sticky and uncomfortable, you're not imagining it. Summers in London, Ontario aren't just hot — they're humid. Sitting close to Lake Erie, our area sees moisture levels that play a major role in how comfortable your home feels, even when the temperature looks fine.</p>
@@ -746,7 +764,7 @@ def blog_bodies():
 <h2>Don't Let Your System Run Nonstop</h2>
 <p>If your air conditioner is running constantly but your home still feels uncomfortable, it's a sign something needs attention. Letting the system run nonstop not only increases your energy bills but can also shorten the lifespan of the equipment. Addressing the issue early can prevent larger repairs later in the season.</p>
 <h2>Schedule AC Service in London Today</h2>
-<p>At London Furnace Repair, we understand how challenging Ontario summers can be. As a family-owned and operated HVAC company, we provide honest, reliable air conditioning repair and maintenance throughout London and the surrounding Middlesex County area. If your home feels humid or your AC is struggling to keep up, we'll help restore comfort and keep your cooling system running efficiently all summer long.</p>
+<p>At London Furnace Repair, we understand how challenging Ontario summers can be. As a licensed, insured HVAC company, we provide honest, reliable air conditioning repair and maintenance throughout London and the surrounding Middlesex County area. If your home feels humid or your AC is struggling to keep up, we'll help restore comfort and keep your cooling system running efficiently all summer long.</p>
 ''',
     }
 
@@ -774,7 +792,7 @@ def build_privacy():
       <h2>How We Use Your Information</h2>
       <p>We use the information you provide to respond to your enquiry, schedule and deliver services, provide quotes, and follow up about your home comfort needs. We do not sell or rent your personal information to third parties.</p>
       <h2>How We Protect Your Information</h2>
-      <p>We take reasonable measures to protect the personal information you share with us against loss, theft, and unauthorized access. Information is shared only with team members and trusted service partners who need it to serve you.</p>
+      <p>We take reasonable measures to protect the personal information you share with us against loss, theft, and unauthorized access. Information is shared only with team members and service partners who need it to serve you.</p>
       <h2>Cookies &amp; Analytics</h2>
       <p>Our website may use cookies and similar technologies to improve your browsing experience and understand site usage. You can disable cookies through your browser settings, though some features may not function as intended.</p>
       <h2>Your Choices</h2>
@@ -819,7 +837,7 @@ def build_404():
 # ============================================================ ROOT FILES
 LLMS = f"""# {SITE_NAME}
 
-> {SITE_NAME} is a licensed, family-run heating and HVAC company in {CITY}, {REGION} that specializes in furnace repair, installation, and 24/7 no-heat emergencies across {CITY} and {COUNTY}. Heating is our focus, and we also handle cooling, heat pumps, fireplaces, thermostats, and duct cleaning.
+> {SITE_NAME} is a licensed, insured heating and HVAC company in {CITY}, {REGION} that specializes in furnace repair, installation, and 24/7 no-heat emergencies across {CITY} and {COUNTY}. Heating is our focus, and we also handle cooling, heat pumps, fireplaces, thermostats, and duct cleaning.
 
 Phone: {PHONE_DISPLAY}
 Email: {EMAIL}
