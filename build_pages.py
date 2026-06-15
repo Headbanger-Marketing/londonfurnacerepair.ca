@@ -174,7 +174,7 @@ def build_service(slug, data):
 
     out = head(
       title=title,
-      desc=data["meta"], path=url, og_type="article",
+      desc=f"{SITE_NAME} — {data['meta']}", path=url, og_type="article",
       schema_blocks=[schema_localbusiness(),
                      schema_breadcrumb(breadcrumb_items),
                      schema_service(nav_label.replace('&amp;','and'), data["intro"], url)])
@@ -184,7 +184,7 @@ def build_service(slug, data):
   <div class="container">
     {crumbs([("Home","/"),("Services","/services/"),(nav_label,"")])}
     <span class="eyebrow on-dark">{data["kicker"]}</span>
-    <h1>{data["h1"]}</h1>
+    <h1>London Furnace Repair — {data["h1"]}</h1>
     <p>{data["intro"]}</p>
     <div class="page-hero__cta">
       <a class="btn btn-primary btn-lg" href="#quote">Get a Free Quote</a>
@@ -287,7 +287,7 @@ def build_home():
 
     out = head(
       title=f"{SITE_NAME} — HVAC Company in {CITY}, ON",
-      desc=f"Honest, efficient, dependable HVAC service in {CITY}, Ontario — furnace & AC repair, heat pumps & more. Call {PHONE_DISPLAY} for a free quote.",
+      desc=f"London Furnace Repair provides honest, efficient, dependable HVAC service in {CITY}, Ontario — furnace & AC repair, heat pumps & more. Call {PHONE_DISPLAY} for a free quote.",
       path="/",
       schema_blocks=[schema_localbusiness(), schema_faq(HOME_FAQ)])
 
