@@ -197,7 +197,7 @@ def build_service(slug, data):
     revs = "".join(review_card(*REVIEW_POOL[i]) for i in data["rev"])
     breadcrumb_items = [("Home","/"),("Services","/services/"),(nav_label, url)]
 
-    nav_plain = nav_label.replace("&amp;", "&")
+    nav_plain = nav_label  # keep &amp; (valid in <title>, renders as &)
     title = f"{nav_plain} in {CITY}, ON | {SITE_NAME}"
     if len(title) > 60:
         title = f"{nav_plain} | {CITY}, ON"
@@ -327,7 +327,7 @@ def build_home():
   <div class="container">
     <div class="hero__copy reveal">
       <span class="eyebrow on-dark">{CITY}'s Furnace &amp; Heating Specialists</span>
-      <h1>{SITE_NAME}, No Heat? Get Your Furnace Running Fast in <span class="accent">{CITY}, ON</span></h1>
+      <h1>No Heat? Get Your Furnace Running Fast in <span class="accent">{CITY}, ON</span></h1>
       <p class="hero__sub">When a London winter turns dangerous, a dead furnace can&#39;t wait. {SITE_NAME} answers no-heat calls day and night, checks for carbon monoxide and safety faults, and gets warm air moving again. We handle every part of your home comfort, but heating is what we do best.</p>
       <div class="hero__cta">
         <a class="btn btn-primary btn-lg" href="#quote">Get a Free Quote</a>
