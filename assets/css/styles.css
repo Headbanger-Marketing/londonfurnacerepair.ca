@@ -51,6 +51,8 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   scroll-padding-top: var(--header-h);
+  /* The closed, off-canvas mobile nav is translated beyond the viewport. */
+  overflow-x: clip;
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
